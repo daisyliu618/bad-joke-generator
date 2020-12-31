@@ -18,6 +18,7 @@
     border-radius: 30px;
   }
   
+
   .JokeList-title {
     font-size: 4rem;
     margin: 2rem;
@@ -25,6 +26,7 @@
     font-weight: 300;
     letter-spacing: 0.6rem;
   }
+  
   .JokeList-title span {
     font-weight: 700;
     letter-spacing: 0;

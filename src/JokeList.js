@@ -6,7 +6,7 @@ import "./JokeList.css";
 
 class JokeList extends Component {
   static defaultProps = {
-    numJokesToGet: 10
+    numJokesToGet: 1
   };
   constructor(props) {
     super(props);
@@ -49,6 +49,7 @@ class JokeList extends Component {
       this.setState({ loading: false });
     }
   }
+
   handleVote(id, delta) {
     this.setState(
       st => ({
