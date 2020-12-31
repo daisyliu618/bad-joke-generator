@@ -81,17 +81,19 @@ class JokeList extends Component {
         </div>
       );
     }
+
+
+    // setTimeout(function(){ 
+    //   let jokes = this.state.jokes.sort((a, b) => b.votes - a.votes); }, 3000);
+
     let jokes = this.state.jokes.sort((a, b) => b.votes - a.votes);
+    
     return (
       <div className="JokeList">
         <div className="JokeList-sidebar">
           <h1 className="JokeList-title">
             Bad Joke <span>Generator</span>
           </h1>
-          {/* <img
-            src="https://assets.dryicons.com/uploads/icon/svg/8927/0eb14c71-38f2-433a-bfc8-23d9c99b3647.svg"
-            alt="laugh"
-          /> */}
           <IconPlayer />
           <button className="JokeList-getmore" onClick={this.handleClick}>
             Generate
