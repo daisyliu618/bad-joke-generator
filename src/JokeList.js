@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Joke from "./Joke";
+import IconPlayer from "./IconPlayer";
 import axios from "axios";
 import { v4 as uuidv4 } from "uuid";
 import "./JokeList.css";
@@ -20,6 +21,7 @@ class JokeList extends Component {
   componentDidMount() {
     if (this.state.jokes.length === 0) this.getJokes();
   }
+
   async getJokes() {
     try {
       let jokes = [];
@@ -65,6 +67,7 @@ class JokeList extends Component {
         window.localStorage.setItem("jokes", JSON.stringify(this.state.jokes))
     );
   }
+
   handleClick() {
     this.setState({ loading: true }, this.getJokes);
   }
@@ -85,7 +88,11 @@ class JokeList extends Component {
           <h1 className="JokeList-title">
             Bad Joke <span>Generator</span>
           </h1>
-          <img src="https://assets.dryicons.com/uploads/icon/svg/8927/0eb14c71-38f2-433a-bfc8-23d9c99b3647.svg" alt="laugh" />
+          {/* <img
+            src="https://assets.dryicons.com/uploads/icon/svg/8927/0eb14c71-38f2-433a-bfc8-23d9c99b3647.svg"
+            alt="laugh"
+          /> */}
+          <IconPlayer />
           <button className="JokeList-getmore" onClick={this.handleClick}>
             Generate
           </button>

@@ -27,11 +27,8 @@
 
   .JokeList-sidebar {
     width: calc(100% - 2rem);
-    /* height:8rem; */
     display: flex;
     flex-direction: row;
-    /* align-items: center;
-   justify-self: start; */
     flex-wrap: wrap;
     padding: 1rem;
     margin: 0.5rem 0;
@@ -90,6 +87,7 @@
     width: 30px;
     height: 30px;
     line-height: 30px;
+    min-width: auto;
   }
 
   .Joke {
