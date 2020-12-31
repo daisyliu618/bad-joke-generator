@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import JokeList from "./JokeList";
 import "./App.css";
 
